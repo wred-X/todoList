@@ -1,8 +1,10 @@
 <?php
 
-use App\Todo;
-use App\TodoTask;
-use App\User;
+namespace Database\Seeders;
+
+use App\Models\Todo;
+use App\Models\TodoTask;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class TodoSeeder extends Seeder
