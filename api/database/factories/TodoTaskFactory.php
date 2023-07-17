@@ -1,19 +1,13 @@
 <?php
 
-namespace Database\Factories;
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\TodoTask;
+use Faker\Generator as Faker;
 
-class TodoTaskFactory extends Factory
-{
-    protected $model = TodoTask::class;
-
-    public function definition()
-    {
-        return [
-            'label'       => $this->faker->sentence(),
-            'is_complete' => $this->faker->boolean(),
-        ];
-    }
-}
+$factory->define(TodoTask::class, function (Faker $faker) {
+    return [
+        'label'       => $faker->sentence(),
+        'is_complete' => $faker->boolean(),
+    ];
+});

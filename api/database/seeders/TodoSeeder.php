@@ -1,7 +1,6 @@
 <?php
 
 namespace Database\Seeders;
-
 use App\Models\Todo;
 use App\Models\TodoTask;
 use App\Models\User;
